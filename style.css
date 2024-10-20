@@ -1,0 +1,79 @@
+/* Reset basic margins, paddings, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for body */
+body {
+    min-height: 100vh; /* Changed to min-height for better flexibility on smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e6e6e6, #f9f9f9); /* Added gradient for a soft background */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px; /* Added padding for better spacing on mobile devices */
+}
+
+/* Container to hold text and image */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Added box shadow for a modern card-like design */
+    max-width: 600px; /* Set a max-width for the container */
+    width: 100%; /* Ensure container is responsive */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect for hover */
+}
+
+/* Headline (h1) styling */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #d2232a; /* Christmas red color */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle text shadow for depth */
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Added shadow around image for a soft 3D effect */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effects */
+.container:hover {
+    transform: translateY(-10px); /* Slight move up effect on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+img:hover {
+    transform: scale(1.05); /* Zoom-in effect when image is hovered */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Scale down the font size for smaller screens */
+    }
+
+    .container {
+        padding: 20px; /* Reduce padding to fit better on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Further scale down for mobile */
+    }
+
+    .container {
+        padding: 15px; /* Reduce padding even more for very small screens */
+    }
+}
